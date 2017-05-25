@@ -6,18 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="www.animepc.me">
-  <title>Archives | 匆哥的博客</title>
+  <title>如何用命令行登陆阿里云服务器 | 匆哥的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="渭南师范学院16级，爱好动漫，现为前端小菜鸟一枚">
-<meta name="keywords" content="前端,js,jquery,javascript,html5,开发者,程序猿,程序媛,极客,编程,代码,开源,IT网站">
-<meta property="og:type" content="website">
-<meta property="og:title" content="匆哥的博客">
-<meta property="og:url" content="www.animepc.me/archives/index.html">
+  <meta name="description" content="如何登陆 使用账号和密码登陆  在命令行git bash中运行：ssh 账户名@IP地址（例如：ssh student@101.200.33.143）然后输入密码。">
+<meta name="keywords" content="命令行">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何用命令行登陆阿里云服务器">
+<meta property="og:url" content="www.animepc.me/2017/05/16/如何用命令行登陆阿里云服务器- 命令行/index.html">
 <meta property="og:site_name" content="匆哥的博客">
-<meta property="og:description" content="渭南师范学院16级，爱好动漫，现为前端小菜鸟一枚">
+<meta property="og:description" content="如何登陆 使用账号和密码登陆  在命令行git bash中运行：ssh 账户名@IP地址（例如：ssh student@101.200.33.143）然后输入密码。">
+<meta property="og:image" content="http://i1.piimg.com/595462/6a228ee798b652b9.png">
+<meta property="og:updated_time" content="2017-05-25T08:53:20.619Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="匆哥的博客">
-<meta name="twitter:description" content="渭南师范学院16级，爱好动漫，现为前端小菜鸟一枚">
+<meta name="twitter:title" content="如何用命令行登陆阿里云服务器">
+<meta name="twitter:description" content="如何登陆 使用账号和密码登陆  在命令行git bash中运行：ssh 账户名@IP地址（例如：ssh student@101.200.33.143）然后输入密码。">
+<meta name="twitter:image" content="http://i1.piimg.com/595462/6a228ee798b652b9.png">
   
     <link rel="alternative" href="/atom.xml" title="匆哥的博客" type="application/atom+xml">
   
@@ -149,36 +152,81 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-如何用命令行登陆阿里云服务器- 命令行" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/05/16/如何用命令行登陆阿里云服务器- 命令行/" class="archive-article-date">
-  	<time datetime="2017-05-16T02:23:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-16</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/16/如何用命令行登陆阿里云服务器- 命令行/">如何用命令行登陆阿里云服务器</a>
+    <h1 class="article-title" itemprop="name">
+      如何用命令行登陆阿里云服务器
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/05/16/如何用命令行登陆阿里云服务器- 命令行/" class="archive-article-date">
+  	<time datetime="2017-05-16T02:23:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="http://i1.piimg.com/595462/6a228ee798b652b9.png" alt="登陆退出"></p>
+<h2 id="如何登陆"><a href="#如何登陆" class="headerlink" title="如何登陆"></a>如何登陆</h2><ul>
+<li>使用账号和密码登陆</li>
+</ul>
+<p>在命令行git bash中运行：<br>ssh 账户名@IP地址（例如：ssh student@101.200.33.143）<br>然后输入密码。 </p>
+<a id="more"></a>
+<p><strong>出现的问题</strong><br><strong>问题1</strong>：命令行上输入不上去密码，为什么光标|在闪却输入不了密码？<br>解决方法：并不是输入不上去。密码已输入，只是在终端上没有显示出来而已。所以只要输入正确的密码就可以登陆上去。</p>
+<ul>
+<li>免密码登陆</li>
+</ul>
+<p>在命令行git bash中运行：<br>ssh-copy-id 账户名@IP地址（例如：ssh student@101.200.33.143）<br>然后输入密码。<br>以后就不用输入密码了。</p>
+<ul>
+<li>如何退出登陆</li>
+</ul>
+<p>在登陆状态下输入 exit 。就可以完成退出。</p>
+<p> 以上です！</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="http://i1.piimg.com/588926/8d88fa1186f4dd8f.png">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="http://i4.buimg.com/588926/587c5331e1a93197.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -190,95 +238,89 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http:www.animepc.me/2017/05/16/如何用命令行登陆阿里云服务器- 命令行/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/05/15/博客搭建过程记录- 随笔/" class="archive-article-date">
-  	<time datetime="2017-05-15T13:42:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-15</time>
-</a>
-        </div>
-    	 
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/15/博客搭建过程记录- 随笔/">博客搭建过程记录</a>
-    </h1>
+  
+    <a href="/2017/05/15/博客搭建过程记录- 随笔/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">博客搭建过程记录</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+  
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/05/13/测试hexo/" class="archive-article-date">
-  	<time datetime="2017-05-13T13:42:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-13</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/13/测试hexo/">第一篇博客</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">测试hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -301,8 +343,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
