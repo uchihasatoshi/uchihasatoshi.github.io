@@ -6,18 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="www.animepc.me">
-  <title>Tag: 命令行 | 匆哥的博客</title>
+  <title>盒模型 | 匆哥的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="渭南师范学院16级，爱好动漫，现为前端小菜鸟一枚">
-<meta name="keywords" content="前端,js,jquery,javascript,html5,开发者,程序猿,程序媛,极客,编程,代码,开源,IT网站">
-<meta property="og:type" content="website">
-<meta property="og:title" content="匆哥的博客">
-<meta property="og:url" content="www.animepc.me/tags/命令行/index.html">
+  <meta name="description" content="引言当我们在写CSS代码的时候难免会去设置一些元素的宽度和高度，这时候，就不得不谈一谈，CSS中一个基本的概念：盒模型（box model）。">
+<meta name="keywords" content="CSS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="盒模型">
+<meta property="og:url" content="www.animepc.me/2017/06/03/盒模型 - CSS/index.html">
 <meta property="og:site_name" content="匆哥的博客">
-<meta property="og:description" content="渭南师范学院16级，爱好动漫，现为前端小菜鸟一枚">
+<meta property="og:description" content="引言当我们在写CSS代码的时候难免会去设置一些元素的宽度和高度，这时候，就不得不谈一谈，CSS中一个基本的概念：盒模型（box model）。">
+<meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtbDNFe_q1VZHVUv2oyJx-qzg-EeYKBsOrzFumzXEzHXq9PJCLSw">
+<meta property="og:image" content="http://i1.piimg.com/1949/85fa913af8cdf82b.png">
+<meta property="og:image" content="http://i1.piimg.com/1949/0bc2a600c2fe6368.png">
+<meta property="og:image" content="http://i4.buimg.com/1949/c56e7f50faa7367b.png">
+<meta property="og:updated_time" content="2017-06-03T06:24:13.328Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="匆哥的博客">
-<meta name="twitter:description" content="渭南师范学院16级，爱好动漫，现为前端小菜鸟一枚">
+<meta name="twitter:title" content="盒模型">
+<meta name="twitter:description" content="引言当我们在写CSS代码的时候难免会去设置一些元素的宽度和高度，这时候，就不得不谈一谈，CSS中一个基本的概念：盒模型（box model）。">
+<meta name="twitter:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtbDNFe_q1VZHVUv2oyJx-qzg-EeYKBsOrzFumzXEzHXq9PJCLSw">
   
     <link rel="alternative" href="/atom.xml" title="匆哥的博客" type="application/atom+xml">
   
@@ -149,60 +155,173 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-盒模型 - CSS" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/05/16/如何用命令行登陆阿里云服务器- 命令行/" class="archive-article-date">
-  	<time datetime="2017-05-16T02:23:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-16</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/16/如何用命令行登陆阿里云服务器- 命令行/">如何用命令行登陆阿里云服务器</a>
+    <h1 class="article-title" itemprop="name">
+      盒模型
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/06/03/盒模型 - CSS/" class="archive-article-date">
+  	<time datetime="2017-06-03T04:35:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-03</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtbDNFe_q1VZHVUv2oyJx-qzg-EeYKBsOrzFumzXEzHXq9PJCLSw" alt="CSS"></p>
+<h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>当我们在写CSS代码的时候难免会去设置一些元素的宽度和高度，这时候，就不得不谈一谈，CSS中一个基本的概念：<strong>盒模型（box model）。</strong></p>
+<a id="more"></a>
+<h2 id="盒模型"><a href="#盒模型" class="headerlink" title="盒模型"></a>盒模型</h2><p>说起盒模型（或者叫框模型），首先我们要说一下<strong>元素框（element box）</strong>，CSS假定所有的文档元素都会生成一个矩形框，这个矩形框就是元素框，它描述了一个元素在文档布局中所占的空间大小。<br><strong>盒模型 (Box Model)</strong> 规定了元素框处理<strong>元素内容</strong>、<strong>内边距</strong>、<strong>边框</strong>和<strong>外边距</strong>的方式。<br><img src="http://i1.piimg.com/1949/85fa913af8cdf82b.png" alt="盒模型"></p>
+<h3 id="打个比方来理解盒模型："><a href="#打个比方来理解盒模型：" class="headerlink" title="打个比方来理解盒模型："></a>打个比方来理解盒模型：</h3><p><strong>盒模型</strong> —— 装东西的盒子<br><strong>内容（content）</strong> —— 盒子里装的东西<br><strong>内边距（padding）</strong> —— 盒子里起保护作用的泡沫板<br><strong>外边距（margin）</strong> —— 两个盒子之间的距离</p>
+<p>我们平时在CSS代码里写的宽度和高度其实是上图中内容区的大小。<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">div</span>&#123;</div><div class="line">   <span class="attribute">width</span>:<span class="number">100px</span>;</div><div class="line">   <span class="attribute">height</span>:<span class="number">100px</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>当我们设置了内外边距和边框之后，元素实际在<strong>页面里占有的空间</strong>要比 width 和 height 的大。<br>因此，实际页面里元素占据的空间大小是：<br><strong>实际宽度 = width + 左右内边距 + 左右边框 + 左右外边距</strong><br><strong>实际高度 = height + 上下内边距 + 上下边框 + 左右外边距</strong></p>
+<p><img src="http://i1.piimg.com/1949/0bc2a600c2fe6368.png" alt="content-box"></p>
+<h2 id="新的盒模型"><a href="#新的盒模型" class="headerlink" title="新的盒模型"></a>新的盒模型</h2><p>CSS3中新增了一种盒模型计算方式：<strong>box-sizing</strong> 属性。盒模型默认的值是 <strong>content-box</strong>, 新增的值是 <strong>border-box</strong>。</p>
+<p>用法示例：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">div</span>&#123;</div><div class="line">    <span class="attribute">box-sizing</span>: border-box;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>文章最开始提到的盒模型就是默认的盒模型。下面来看一看<strong>border-box盒模型。</strong></p>
+<h3 id="border-box-盒模型"><a href="#border-box-盒模型" class="headerlink" title="border-box 盒模型"></a>border-box 盒模型</h3><p>border-box 盒模型，基本的概念与默认的盒模型差不多，区别在于在页面里元素占据的空间大小：<br><strong>实际宽度 = width（内容 + padding） + 左右外边距</strong><br><strong>实际高度 = height（内容 + padding） + 左右外边距</strong></p>
+<p><img src="http://i4.buimg.com/1949/c56e7f50faa7367b.png" alt="border-box"></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>以上就是对 CSS 盒模型的简单总结，最后提到的 box-sizing 属性的兼容性可以参考<a href="https://caniuse.com/#search=box-sizing" target="_blank" rel="external">box-sizing浏览器兼容</a>，其中，IE8 以上都支持box-sizing属性，所以，以后我们可以根据自己的需求来设置合适的盒模型来进行页面的布局。</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="http://i1.piimg.com/588926/8d88fa1186f4dd8f.png">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="http://i4.buimg.com/588926/587c5331e1a93197.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">命令行</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http:www.animepc.me/2017/06/03/盒模型 - CSS/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2017/05/19/从URL到页面展现 - HTML/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">从URL输入到页面展现</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+  
+  
   
 
-    
+  
+
+  
 
 
           </div>
@@ -225,9 +344,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		root: "/",
