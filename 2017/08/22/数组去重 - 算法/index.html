@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="www.animepc.me">
-  <title>第一篇博客 | 匆哥的博客</title>
+  <title>数组去重 | 匆哥的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="用于测试hexo博客的搭建这是我的第一篇博客，不知道该写些什么。就随便写写吧。  宇智波匆匆 1993.12 本科 陕西 最喜欢动漫 《火影忍者》《海贼王》《龙珠》">
-<meta name="keywords" content="测试hexo">
+  <meta name="description" content="数组去重的几种方法">
+<meta name="keywords" content="算法">
 <meta property="og:type" content="article">
-<meta property="og:title" content="第一篇博客">
-<meta property="og:url" content="www.animepc.me/2017/05/13/测试hexo/index.html">
+<meta property="og:title" content="数组去重">
+<meta property="og:url" content="www.animepc.me/2017/08/22/数组去重 - 算法/index.html">
 <meta property="og:site_name" content="匆哥的博客">
-<meta property="og:description" content="用于测试hexo博客的搭建这是我的第一篇博客，不知道该写些什么。就随便写写吧。  宇智波匆匆 1993.12 本科 陕西 最喜欢动漫 《火影忍者》《海贼王》《龙珠》">
-<meta property="og:updated_time" content="2017-05-13T16:14:23.622Z">
+<meta property="og:description" content="数组去重的几种方法">
+<meta property="og:updated_time" content="2017-08-22T09:48:10.296Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="第一篇博客">
-<meta name="twitter:description" content="用于测试hexo博客的搭建这是我的第一篇博客，不知道该写些什么。就随便写写吧。  宇智波匆匆 1993.12 本科 陕西 最喜欢动漫 《火影忍者》《海贼王》《龙珠》">
+<meta name="twitter:title" content="数组去重">
+<meta name="twitter:description" content="数组去重的几种方法">
   
     <link rel="alternative" href="/atom.xml" title="匆哥的博客" type="application/atom+xml">
   
@@ -150,36 +150,37 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-测试hexo" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-数组去重 - 算法" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      第一篇博客
+      数组去重
     </h1>
   
 
         
-        <a href="/2017/05/13/测试hexo/" class="archive-article-date">
-  	<time datetime="2017-05-13T13:42:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-13</time>
+        <a href="/2017/08/22/数组去重 - 算法/" class="archive-article-date">
+  	<time datetime="2017-08-22T09:20:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-22</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="用于测试hexo博客的搭建"><a href="#用于测试hexo博客的搭建" class="headerlink" title="用于测试hexo博客的搭建"></a>用于测试hexo博客的搭建</h2><p>这是我的第一篇博客，不知道该写些什么。就随便写写吧。</p>
+        <h2 id="数组去重的几种方法"><a href="#数组去重的几种方法" class="headerlink" title="数组去重的几种方法"></a>数组去重的几种方法</h2><a id="more"></a>
 <ul>
-<li>宇智波匆匆</li>
-<li>1993.12</li>
-<li>本科</li>
-<li>陕西</li>
-<li>最喜欢动漫<ul>
-<li>《火影忍者》《海贼王》《龙珠》</li>
-</ul>
+<li><p>原生js<br>思路：<br>1、创建一个新数组。<br>2、将原来的数组进行排序。<br>3、遍历排序的数组，如果某一项和它后面的一项不相等，那就把这一项 push 到新数组里去。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>,<span class="number">7</span>,<span class="number">2</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">5</span>,<span class="number">4</span>,<span class="number">39</span>,<span class="number">4</span>,<span class="number">8</span>,<span class="number">2</span>];</div><div class="line"><span class="keyword">var</span> newArr = [];</div><div class="line"><span class="keyword">var</span> arrSort = arr.sort();</div><div class="line"><span class="keyword">for</span>(i=<span class="number">0</span>; i&lt;arrSort.length;i++)&#123;</div><div class="line">    <span class="keyword">if</span>(arrSort[i+<span class="number">1</span>] !== arrSort[i])&#123;</div><div class="line">        newArr.push(arrSort[i]);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"><span class="built_in">console</span>.log(newArr);    <span class="comment">//[1, 2, 39, 4, 5, 7, 8]</span></div></pre></td></tr></table></figure>
 </li>
+<li><p>jQuery<br>利用 jQuery.unique() 方法，不过在 jQuery3 中，这种方法已经过时了，可以用 jQuery.uniquesort() 方法代替。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>,<span class="number">7</span>,<span class="number">2</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">5</span>,<span class="number">4</span>,<span class="number">39</span>,<span class="number">4</span>,<span class="number">8</span>,<span class="number">2</span>];</div><div class="line"><span class="keyword">var</span> arrUnique = $.unique(arr);</div><div class="line"><span class="built_in">console</span>.log(arrUnique);    <span class="comment">//[1, 2, 39, 4, 5, 7, 8]</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+<ul>
+<li>ES6<br>直接使用 Array.from(new Set(arr)) ,不过该方法去重后是按原数组的顺序进行输出的。<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>,<span class="number">7</span>,<span class="number">2</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">5</span>,<span class="number">4</span>,<span class="number">39</span>,<span class="number">4</span>,<span class="number">8</span>,<span class="number">2</span>];</div><div class="line"><span class="keyword">var</span> arrUnique = <span class="built_in">Array</span>.from(<span class="keyword">new</span> <span class="built_in">Set</span>(arr));</div><div class="line"><span class="built_in">console</span>.log(arrUnique);    <span class="comment">//[1, 7, 2, 4, 5, 39, 8]</span></div></pre></td></tr></table></figure></li>
 </ul>
 
       
@@ -225,7 +226,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">测试hexo</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
         		</li>
       		
 		</ul>
@@ -281,7 +282,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http:www.animepc.me/2017/05/13/测试hexo/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http:www.animepc.me/2017/08/22/数组去重 - 算法/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -295,15 +296,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/05/15/博客搭建过程记录- 随笔/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          博客搭建过程记录
-        
-      </div>
-    </a>
   
+    <a href="/2017/08/02/浮动和清除浮动 - CSS/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">浮动和清除浮动</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
